@@ -1,0 +1,58 @@
+.custom-dialog {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(50px);
+    border: none;
+    height: 300px;
+    width: 400px;
+    border-radius: 20px;
+    padding: 20px;
+    overflow: hidden;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.modal--form {
+    display: grid;
+    grid-template-rows: 100px 150px 80px;
+}
+.modal--header{
+}
+.modal--body{
+    border: 1px dashed #999999;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.modal--file:focus {
+    outline: none;
+}
+.modal--file::file-selector-button {
+}
+.modal--footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.modal--footer:has(:only-child){
+    justify-content: center;
+}
+.secondary--btn {
+    background: none;
+    color: #333;
+    border-radius: 12px;
+    cursor: pointer;
+    border: 1px solid black;
+    padding: 0.4em 1.6em;
+    font-size: 1em;
+    font-weight: 450;
+    font-family: inherit;
+    transition: all 0.25s;
+    box-sizing: border-box;
+}
+.secondary--btn:hover {
+  transform: scale(1.05);
+}
+#modal--file__uploading--progress {
+    width: 90%;
+
+}
